@@ -301,6 +301,7 @@ function AddStockDetail(el, price) {
         $(el).parent().parent().siblings('td:last-child').append(productPrice);
         $(el).parent().parent().siblings('td:last-child').attr('data-price', productPrice);
 
+        //cập nhật lại giá tổng sp
         let total = $('.total-price').attr('data-total');
         total = parseInt(total) + parseInt(price);
         $('.total-price').attr('data-total', total);
@@ -323,6 +324,7 @@ function AddStockDetail(el, price) {
     }
 }
 
+//xóa 1 sản phẩm
 function RemoveCart(el, index) {
     let cartStr = localStorage.getItem("Cart");
     if (cartStr == null)

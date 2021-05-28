@@ -141,10 +141,11 @@ function GetFormAddOrEdit(url, Id) {
                 $('.btn-save').append('<i class="fa fa-spinner fa-spin d-none"></i><i class="bi bi-check2 d-none"></i >Cập nhật');
                 $('.modal-title').text('Cập nhật');
             }
-            $('.modal-add').modal('show');
+            //$('.modal-add').modal('show');
         },
         error: function (error) {
             console.log("error");
+            console.log(error);
             console.log(error);
         },
         complete: function () {

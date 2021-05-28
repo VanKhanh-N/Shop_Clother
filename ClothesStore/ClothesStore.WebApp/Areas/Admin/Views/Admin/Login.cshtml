@@ -47,10 +47,7 @@
                     $('body').addClass('overlayout');
                 },
                 success: function (res) {
-                    if (res.status == true) {
-                        if (res.isAdmin == null || res.isAdmin == false)
-                            location.href = '/';
-                        else
+                    if (res.status == true) {                       
                             location.href = '/Admin/Home/Index';
                     }
                     else {
