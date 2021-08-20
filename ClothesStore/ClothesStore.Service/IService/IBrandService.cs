@@ -11,6 +11,7 @@ namespace ClothesStore.Service.IService
     {
         public Task<List<Brand>> GetAll();
         public Task<ResponseData<Brand>> GetListData(RequestData requestData);
+
         public Task<Brand> GetObjectById(int Id);
         public Task<bool> AddOrUpdate(Brand brand);
         public Task<bool> DeleteById(int Id);
